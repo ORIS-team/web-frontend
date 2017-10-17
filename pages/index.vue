@@ -1,7 +1,7 @@
 <template>
   <section class="container">
     <div>
-      <logo/>
+      <img src="~/assets/Logo.svg">
       <h1 class="title">
         ORIS project
       </h1>
@@ -9,18 +9,20 @@
         Object Recognized Integrated System
       </h2>
       <div class="links">
-        <a href="https://github.com/ORIS-team/" target="_blank" class="button--grey">GitHub</a>
+        <a href="https://github.com/ORIS-team" target="_blank" class="button--grey">GitHub</a>
       </div>
     </div>
+
+    
   </section>
 </template>
 
 <script>
-import Logo from '~/components/Logo.vue'
 
 export default {
+  data: {
+  },
   components: {
-    Logo
   }
 }
 </script>

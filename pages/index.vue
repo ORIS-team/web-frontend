@@ -1,28 +1,38 @@
 <template>
-  <section class="container">
-    <div>
-      <img src="~/assets/Logo.svg">
-      <h1 class="title">
-        ORIS project
-      </h1>
-      <h2 class="subtitle">
-        Object Recognized Integrated System
-      </h2>
-      <div class="links">
-        <a href="https://github.com/ORIS-team" target="_blank" class="button--grey">GitHub</a>
-      </div>
-    </div>
+  <div>
+    <v-toolbar dark color="primary">
+      <v-toolbar-side-icon class="white--text"></v-toolbar-side-icon>
+      <v-toolbar-title class="white--text">Object Recognized Integrated System</v-toolbar-title>
+      <v-spacer></v-spacer>
+      <v-btn icon>
+        <v-icon class="white--text">search</v-icon>
+      </v-btn>
+    </v-toolbar>
 
-    
-  </section>
+    <section class="container">
+      <div>
+        <Logo/>
+        <h1 class="title">ORIS</h1>
+        <h3 class="subtitle">
+        </h3>
+        <div class="links">
+          <a href="https://github.com/ORIS-team" target="_blank" class="button--grey">GitHub</a>
+        </div>
+      </div>
+
+
+    </section>
+  </div>
+
 </template>
 
 <script>
-
+import Logo from '~/components/Logo.vue'
 export default {
   data: {
   },
   components: {
+    Logo
   }
 }
 </script>
@@ -37,7 +47,7 @@ export default {
 }
 
 .title {
-  font-family: "Quicksand", "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; /* 1 */
+  font-family: "Poppins";
   display: block;
   font-weight: 300;
   font-size: 100px;

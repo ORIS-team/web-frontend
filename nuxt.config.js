@@ -6,10 +6,14 @@ module.exports = {
     title: 'web-frontend',
     meta: [
       { charset: 'utf-8' },
-      { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+      { name: 'viewport', content: 'width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui' },
       { hid: 'description', name: 'description', content: 'Frontend of Oris project' }
     ],
     link: [
+      //  <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500" rel="stylesheet">
+      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Poppins:300,400,500' },
+      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons' },
+      { rel: 'stylesheet', href: 'https://unpkg.com/vuetify/dist/vuetify.min.css'},
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
     ]
   },
@@ -20,6 +24,7 @@ module.exports = {
   /*
   ** Build configuration
   */
+  plugins: ['~/plugins/vuetify.js'],
   build: {
     /*
     ** Run ESLint on save

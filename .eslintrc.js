@@ -11,6 +11,6 @@ module.exports = {
     'html'
   ],
   // add your custom rules here
-  rules: {},
+  rules: { 'indent': 0, 'no-multiple-empty-lines': 0 },
   globals: {}
 }

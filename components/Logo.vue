@@ -9,6 +9,7 @@
     export default {
         props: ['height'],
         data: () => {
+            return {}
         }
     }
 

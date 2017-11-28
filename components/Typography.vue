@@ -18,7 +18,7 @@
 <template lang="html">
     <div>
         <div class="typo-oris" :style="{'font-size': size}">
-            ORIS
+            ORIS <span style="color:#337883;">.</span>
         </div>
 
     </div>

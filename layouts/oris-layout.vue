@@ -44,16 +44,7 @@ export default {
     components: {
         Typography
     },
-    mounted () {
-        this.onResize()
-        function draw (w, h, xpos) {
-            var ctx = document.getCSSCanvasContext('2d', 'circles', w, h)
-            ctx.fillStyle = '#F1F1F1'
-            ctx.ellipse(xpos, -200, xpos * 0.75, 700, 0 * Math.PI / 180, 0, 2 * Math.PI)
-            ctx.fill()
-        }
-        draw(this.windowSize.x, this.windowSize.y, this.windowSize.x)
-    },
+
     methods: {
         onResize () {
             this.windowSize = {

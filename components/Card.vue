@@ -2,11 +2,11 @@
   <div>
     <v-card>
       <v-card-title >
-        <div class="headline"><title></title></div>
-        <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-          Nam lobortis.
-        </div>
+        <div class="headline">Artificial Vision </div>
       </v-card-title>
+      <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        Nam lobortis.
+      </div>
     </v-card>
   </div>
 </template>

@@ -24,7 +24,9 @@
     color: #FFFFFF;
     background-color: #D337C1;
 }
-
+.card{
+  background-color: transparent;
+}
 
 </style>
 
@@ -43,7 +45,17 @@
             <v-flex xs5>
                 <Logo height="350px"/>
             </v-flex>
-            <v-flex ys8>
+            <v-flex xs4>
+              <card class="card">
+
+              </card>
+            </v-flex>
+            <v-flex xs4>
+              <card>
+
+              </card>
+            </v-flex>
+            <v-flex xs4>
               <card>
 
               </card>
